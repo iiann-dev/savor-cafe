@@ -62,7 +62,7 @@ export default function App() {
             whileTap={{ scale: 0.98 }}
           >
             <span className="font-display-lg text-[24px] uppercase tracking-widest text-primary-container">
-              Savor Cafe &amp; Bistro
+              Savor Cafe
             </span>
           </motion.div>
 
@@ -164,7 +164,7 @@ export default function App() {
             <div>
               <h3 className="font-display-lg text-headline-md text-primary mb-4">Savor</h3>
               <p className="text-muted-stone text-sm leading-relaxed max-w-xs">
-                High-end Italian dining in the heart of San Francisco's Inner Sunset district.
+                Healthy vegetarian and modern Arabic food in the heart of San Francisco's Inner Sunset district.
               </p>
             </div>
             <div>
@@ -191,7 +191,7 @@ export default function App() {
             </div>
           </div>
           <div className="border-t border-border-subtle/50 mt-8 pt-8 text-center text-muted-stone text-xs font-label-caps uppercase tracking-widest">
-            &copy; {new Date().getFullYear()} Savor Cafe &amp; Bistro. All rights reserved.
+            &copy; {new Date().getFullYear()} Savor Cafe. All rights reserved.
           </div>
         </div>
       </footer>

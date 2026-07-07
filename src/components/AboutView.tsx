@@ -5,8 +5,6 @@ import { MapPin, Phone, Award } from 'lucide-react';
 export default function AboutView() {
   return (
     <div className="relative space-y-16">
-      {/* Decorative space - removed AIDA image */}
-
       <motion.div
         className="container-frame rounded-2xl p-6 md:p-16 relative z-10"
         initial={{ opacity: 0, y: 30 }}
@@ -20,7 +18,7 @@ export default function AboutView() {
               Our Legacy
             </span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
-              Our Story
+              About Savor
             </h1>
             <blockquote className="relative">
               <span className="absolute -top-4 -left-6 text-primary opacity-30 text-6xl font-display-lg select-none">
@@ -42,7 +40,7 @@ export default function AboutView() {
               >
                 <img
                   src={IMAGES.chefMohamed}
-                  alt="Chef Mohamed"
+                  alt="Chef Mohamed Aboghanem"
                   className="w-full h-full object-cover scale-105 hover:scale-110 transition-transform duration-700"
                 />
               </motion.div>
@@ -55,23 +53,28 @@ export default function AboutView() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-16 mb-24 items-start border-t border-border-subtle/50 pt-16">
           <div className="md:col-span-5 space-y-4">
             <h2 className="font-headline-md text-headline-md text-primary">
-              The Visionary Behind the Flavors
+              Chef Mohamed Aboghanem
             </h2>
             <div className="h-0.5 w-20 bg-primary"></div>
           </div>
           <div className="md:col-span-7 space-y-6 text-text-warm-white/80 leading-relaxed font-body-md">
             <p className="first-letter:text-5xl first-letter:font-display-lg first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left first-letter:leading-none">
-              Chef Mohamed knows what he is meant to do in this life; it is cooking. He doesn't see challenges in making food that is clean, nourishing, incredibly tasty, and healthy for all kinds of diets. He has evolved into an understated talent who takes pride in being a hands-on Chef and sole business owner.
+              Chef Mohamed knows what he is meant to do in this life; and it is cooking. What is important to know about him, is that he doesn't see challenges in making food that is clean, nourishing, and incredibly tasty; but also healthy for all kinds of diets.
             </p>
             <p>
-              Chef Mohamed carefully selects ingredients which are best for the health of all involved, ensuring that every plate served at Savor Cafe &amp; Bistro represents a harmonious balance between traditional craftsmanship and modern nutritional consciousness. Savor delivers an unforgettable dining session in a cozy space that makes you feel right at home.
+              He has evolved into quite an understated talent who takes pride in being a hands-on Chef and sole business owner. Chef Mohamed carefully selects ingredients which are best for the health of all involved, ensuring that every plate served at Savor Cafe represents a harmonious balance between traditional craftsmanship and modern nutritional consciousness.
+            </p>
+            <p>
+              Savor delivers an unforgettable dining experience in a cozy space that makes you feel right at home.
             </p>
           </div>
         </div>
 
         {/* Philosophy Block */}
         <div className="bg-surface-onyx rounded-2xl p-8 md:p-16 text-center space-y-8 border border-border-subtle relative overflow-hidden">
-          <Award className="absolute -top-10 -right-10 w-40 h-40 text-primary opacity-5 rotate-12" />
+          <div className="absolute -top-10 -right-10 w-40 h-40 text-primary opacity-5 rotate-12">
+            <Award className="w-full h-full" />
+          </div>
           <h3 className="font-headline-md text-headline-md text-text-warm-white max-w-3xl mx-auto leading-snug italic">
             "We offer healthy vegetarian, modern, Arabic food, as well as beer and wine. Stop by eat some delicious food and relax."
           </h3>
