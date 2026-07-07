@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #e6c487;
+  --color-primary-container: #c9a96e;
+  --color-primary-fixed-dim: #e4c285;
+  --color-secondary: #eec068;
+  --color-tertiary: #cec7c3;
+  --color-surface: #161311;
+  --color-surface-onyx: #292524;
+  --color-surface-container: #221f1d;
+  --color-surface-container-low: #1e1b19;
+  --color-surface-container-high: #2d2927;
+  --color-surface-container-highest: #383432;
+  --color-surface-dim: #161311;
+  --color-surface-bright: #3c3836;
+  --color-surface-container-lowest: #100e0c;
+  --color-background: #161311;
+  --color-on-surface: #e9e1dd;
+  --color-on-background: #e9e1dd;
+  --color-text-warm-white: #f5f5f0;
+  --color-on-surface-variant: #d0c5b5;
+  --color-muted-stone: #a8a29e;
+  --color-on-primary: #412d00;
+  --color-on-primary-container: #543d0c;
+  --color-outline: #998f81;
+  --color-outline-variant: #4d463a;
+  --color-error: #ffb4ab;
+  --color-error-container: #93000a;
+  --color-border-subtle: rgba(255, 255, 255, 0.12);
+  --color-surface-tint: #e4c285;
+  --color-inverse-primary: #745a27;
+  --color-inverse-surface: #e9e1dd;
+  --color-inverse-on-surface: #33302d;
+
+  /* Font families */
+  --font-display-lg: "Playfair Display", serif;
+  --font-headline-md: "Playfair Display", serif;
+  --font-body-lg: "Geist", sans-serif;
+  --font-body-md: "Geist", sans-serif;
+  --font-label-caps: "Geist", sans-serif;
+
+  /* Font sizes */
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 1;
+  --text-label-caps--letter-spacing: 0.08em;
+  --text-label-caps--font-weight: 600;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 1.2;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 600;
+  --text-display-lg: 64px;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+  --text-display-lg-mobile: 40px;
+  --text-display-lg-mobile--line-height: 1.2;
+  --text-display-lg-mobile--letter-spacing: -0.02em;
+  --text-display-lg-mobile--font-weight: 700;
+
+  /* Spacing */
+  --spacing-container-max: 1400px;
+  --spacing-section-padding: 5rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-gutter: 2rem;
+
+  /* Border radius */
+  --radius-container: 16px;
+}
+
+/* Brick wall background */
+body {
+  background-color: #1c1917;
+  background-image:
+    linear-gradient(rgba(28, 25, 23, 0.95), rgba(28, 25, 23, 0.95)),
+    url('https://www.transparenttextures.com/patterns/dark-brick-wall.png');
+  color: #e9e1dd;
+  font-family: "Geist", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container frame with white border over brick bg */
+.container-frame {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background-color: #292524;
+  position: relative;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Nav hover underline */
+.nav-hover-line {
+  position: relative;
+}
+.nav-hover-line::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #c9a96e;
+  transition: width 0.3s ease;
+}
+.nav-hover-line:hover::after {
+  width: 100%;
+}
+.nav-hover-line.active::after {
+  width: 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+::-webkit-scrollbar-thumb {
+  background: #292524;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #383432;
+}
+
+/* Selection */
+::selection {
+  background-color: #c9a96e;
+  color: #412d00;
+}

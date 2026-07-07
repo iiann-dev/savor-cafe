@@ -1,0 +1,6 @@
+{
+  "name": "Savor Cafe & Bistro",
+  "description": "Premium dining experience in an intimate industrial setting, featuring modern Arabic cuisine in the heart of San Francisco.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
