@@ -10,30 +10,31 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
   return (
     <div className="space-y-24">
       {/* SECTION 1: HERO */}
-      <section className="flex flex-col md:flex-row min-h-[600px] md:min-h-[800px] items-center relative">
+      <section className="flex flex-col md:flex-row min-h-[auto] md:min-h-[800px] items-center relative">
         {/* Left: Text 40% */}
-        <div className="w-full md:w-[40%] px-8 md:px-12 py-16 md:py-20 z-10">
+        <div className="w-full md:w-[40%] px-6 md:px-12 py-12 md:py-20 z-10">
           <motion.div
+            className="text-left"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="font-label-caps text-primary-container mb-4 block uppercase tracking-widest">
+            <span className="font-label-caps text-primary-container mb-3 block uppercase tracking-widest text-sm md:text-base">
               Welcome to
             </span>
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container mb-6 leading-none">
+            <h1 className="font-display-lg text-4xl md:text-display-lg text-primary-container mb-4 leading-none">
               Savor Cafe
             </h1>
-            <p className="font-body-lg text-white/80 mb-3 max-w-sm leading-relaxed">
+            <p className="font-body-md md:font-body-lg text-white/80 mb-2 max-w-xs md:max-w-sm leading-relaxed">
               Healthy vegetarian, modern Arabic food, as well as beer and wine.
             </p>
-            <p className="font-body-md text-primary/80 mb-10 max-w-sm leading-relaxed italic">
+            <p className="font-body-sm md:font-body-md text-primary/80 mb-8 max-w-xs md:max-w-sm leading-relaxed italic">
               Stop by, eat some delicious food and relax.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <motion.button
                 onClick={() => onNavigate('menu')}
-                className="bg-primary-container text-surface-onyx px-8 py-4 rounded-lg font-label-caps hover:translate-y-[-2px] transition-transform cursor-pointer"
+                className="bg-primary-container text-surface-onyx px-7 py-3.5 rounded-lg font-label-caps text-sm hover:translate-y-[-2px] transition-transform cursor-pointer"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
@@ -41,7 +42,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
               </motion.button>
               <motion.button
                 onClick={() => onNavigate('reservations')}
-                className="border border-primary-container text-primary-container px-8 py-4 rounded-lg font-label-caps hover:bg-primary-container/10 transition-colors cursor-pointer"
+                className="border border-primary-container text-primary-container px-7 py-3.5 rounded-lg font-label-caps text-sm hover:bg-primary-container/10 transition-colors cursor-pointer"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
