@@ -9,9 +9,8 @@ interface HomeViewProps {
 export default function HomeView({ onNavigate }: HomeViewProps) {
   return (
     <div className="space-y-24">
-      {/* SECTION 1: HERO ASYMMETRIC 40/60 */}
+      {/* SECTION 1: HERO */}
       <section className="flex flex-col md:flex-row min-h-[600px] md:min-h-[800px] items-center relative">
-
         {/* Left: Text 40% */}
         <div className="w-full md:w-[40%] px-8 md:px-12 py-16 md:py-20 z-10">
           <motion.div
@@ -20,13 +19,16 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
             transition={{ duration: 0.6 }}
           >
             <span className="font-label-caps text-primary-container mb-4 block uppercase tracking-widest">
-              Chef's Special
+              Welcome to
             </span>
             <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container mb-6 leading-none">
-              PASTA WITH SEAFOOD
+              Savor Cafe
             </h1>
-            <p className="font-body-lg text-white/80 mb-10 max-w-sm leading-relaxed">
-              Lasagna al Forno. Our signature slow-cooked ragù layered with handmade egg pasta and creamy béchamel.
+            <p className="font-body-lg text-white/80 mb-3 max-w-sm leading-relaxed">
+              Healthy vegetarian, modern Arabic food, as well as beer and wine.
+            </p>
+            <p className="font-body-md text-primary/80 mb-10 max-w-sm leading-relaxed italic">
+              Stop by, eat some delicious food and relax.
             </p>
             <div className="flex flex-wrap gap-4">
               <motion.button
@@ -38,12 +40,12 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
                 VIEW MENU
               </motion.button>
               <motion.button
-                onClick={() => onNavigate('about')}
+                onClick={() => onNavigate('reservations')}
                 className="border border-primary-container text-primary-container px-8 py-4 rounded-lg font-label-caps hover:bg-primary-container/10 transition-colors cursor-pointer"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
-                OUR STORY
+                MAKE A RESERVATION
               </motion.button>
             </div>
           </motion.div>
@@ -59,8 +61,8 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
           >
             <div className="aspect-[4/3] md:aspect-square rounded-[16px] overflow-hidden border border-border-subtle shadow-2xl">
               <img
-                src={IMAGES.seafoodPasta}
-                alt="Premium Seafood Pasta"
+                src={IMAGES.heroFood}
+                alt="Fresh vegetarian cuisine"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -84,7 +86,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
                 Chef's Tasting Menu
               </h2>
               <p className="font-body-md text-text-warm-white/80 leading-relaxed">
-                A curated journey through the flavors of coastal Italy. Savor traditional cooking elevated with our signature modern touches.
+                A curated journey through the vibrant flavors of the Mediterranean. Savor traditional vegetarian dishes elevated with Chef Mohamed's signature touch.
               </p>
               <div className="border-l-2 border-primary pl-4 py-2 space-y-2">
                 <p className="text-xl font-display-lg text-primary">3 courses Prix Fixe $35/pp</p>
@@ -112,8 +114,8 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
             >
               <div className="aspect-video w-full">
                 <img
-                  src={IMAGES.seafoodPasta}
-                  alt="Seafood Delicacy"
+                  src={IMAGES.foodPlatter}
+                  alt="Fresh vegetarian platter"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -122,7 +124,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
                   Featured This Week
                 </span>
                 <h4 className="font-display-lg text-2xl text-text-warm-white">
-                  Linguine allo Scoglio
+                  Seasonal Mediterranean
                 </h4>
               </div>
             </motion.div>
@@ -143,14 +145,15 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
           <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-border-subtle shadow-xl">
             <img
               src={IMAGES.chefMohamed}
-              alt="Chef Mohamed"
+              alt="Chef Mohamed Aboghanem"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-primary text-on-primary p-4 rounded-full w-24 h-24 flex flex-col items-center justify-center font-display-lg text-center text-[10px] leading-tight shadow-xl">
             <span>EST.</span>
             <span className="text-lg">2018</span>
-            <span>SAN FRANCISCO</span>
+            <span>INNER</span>
+            <span>SUNSET</span>
           </div>
         </motion.div>
 
@@ -179,7 +182,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
 
           <div className="flex items-center gap-3">
             <span className="font-label-caps text-xs uppercase tracking-wider text-primary">
-              Chef Mohamed — Founder &amp; Head Chef
+              Chef Mohamed Aboghanem — Founder &amp; Head Chef
             </span>
           </div>
 
