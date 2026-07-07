@@ -82,7 +82,7 @@ export default function ContactView() {
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                   <span className="font-display-lg text-lg text-text-warm-white tracking-widest uppercase drop-shadow-md">
-                    Savor Cafe
+                    Savor Cafe &amp; Bistro
                   </span>
                   <span className="font-body-md text-xs text-primary mt-1">
                     Irving st / 5th ave

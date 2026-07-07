@@ -10,7 +10,7 @@ export interface MenuItem {
   name: string;
   price: number;
   description: string;
-  category: 'sandwiches-shawarmas' | 'salads-sharing' | 'dinner-tapas';
+  category: 'all-day' | 'dinner-tapas';
 }
 
 export interface ReservationDetails {
