@@ -57,12 +57,12 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
         {/* Right: Image 60% */}
         <div className="w-full md:w-[60%] relative overflow-visible flex justify-center md:justify-end">
           <motion.div
-            className="w-full max-w-2xl"
+            className="w-full max-w-lg"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="aspect-[4/3] md:aspect-square rounded-[16px] overflow-hidden border border-border-subtle shadow-2xl">
+            <div className="aspect-[4/3] md:aspect-[5/4] rounded-[16px] overflow-hidden border border-border-subtle shadow-2xl">
               <img
                 src={IMAGES.heroFood}
                 alt="Fresh vegetarian cuisine"
