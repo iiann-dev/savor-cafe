@@ -230,4 +230,6 @@ export const IMAGES = {
   foodPlatter: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800&auto=format&fit=crop',
   // Bread/hummus close up
   hummusPlatter: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?q=80&w=800&auto=format&fit=crop',
+  // Seared steak / wood-fired entree
+  steakPlatter: 'https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1200&auto=format&fit=crop',
 };
