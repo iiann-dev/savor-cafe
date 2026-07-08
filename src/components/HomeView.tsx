@@ -11,8 +11,8 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
     <div className="space-y-24">
       {/* SECTION 1: HERO */}
       <section className="flex flex-col md:flex-row min-h-[600px] md:min-h-[800px] items-center relative overflow-x-hidden">
-        {/* Left: Text 40% */}
-        <div className="w-full md:w-[40%] px-8 md:px-12 py-16 md:py-20 z-10">
+        {/* Left: Text 50% */}
+        <div className="w-full md:w-1/2 px-8 md:px-16 py-12 md:py-16 z-10">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -21,16 +21,16 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
             <span className="font-label-caps text-primary-container mb-4 block uppercase tracking-widest">
               Welcome to
             </span>
-            <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary-container mb-6 leading-none">
+            <h1 className="font-display-lg text-display-lg-mobile md:text-display-xl text-primary-container mb-6 leading-none">
               Savor Cafe
             </h1>
-            <p className="font-body-lg text-white/80 mb-3 max-w-sm leading-relaxed">
+            <p className="font-body-lg text-white/80 mb-3 leading-relaxed">
               Healthy vegetarian, modern Arabic food, as well as beer and wine.
             </p>
-            <p className="font-body-md text-white/70 mb-1 max-w-sm leading-relaxed">
+            <p className="font-body-md text-white/70 mb-1 leading-relaxed">
               Nestled in Inner Sunset, San Francisco — where every dish is made with love.
             </p>
-            <p className="font-body-md text-primary/80 mb-10 max-w-sm leading-relaxed italic">
+            <p className="font-body-md text-primary/80 mb-10 leading-relaxed italic">
               Stop by, eat some delicious food and relax.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -54,15 +54,15 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
           </motion.div>
         </div>
 
-        {/* Right: Image 60% */}
-        <div className="w-full md:w-[60%] relative overflow-hidden flex justify-center md:justify-end">
+        {/* Right: Image 50% */}
+        <div className="w-full md:w-1/2 relative overflow-hidden flex justify-center md:justify-center">
           <motion.div
-            className="w-full max-w-md"
+            className="w-full"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="aspect-[4/3] md:aspect-[4/3] rounded-[16px] overflow-hidden border border-border-subtle shadow-2xl">
+            <div className="aspect-[4/3] rounded-[16px] overflow-hidden border border-border-subtle shadow-2xl">
               <img
                 src={IMAGES.heroFood}
                 alt="Fresh vegetarian cuisine"
