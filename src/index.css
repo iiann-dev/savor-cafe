@@ -75,6 +75,13 @@
   --radius-container: 16px;
 }
 
+/* Anti-horizontal-scroll: block all levels */
+html, body, :root, #root {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 /* Brick wall background */
 body {
   background-color: #1c1917;
@@ -85,9 +92,6 @@ body {
   font-family: "Geist", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
 }
 
 /* Container frame with white border over brick bg */
