@@ -55,7 +55,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
         </div>
 
         {/* Right: Image 60% */}
-        <div className="w-full md:w-[60%] relative overflow-visible flex justify-center md:justify-end">
+        <div className="w-full md:w-[60%] relative overflow-hidden flex justify-center md:justify-end">
           <motion.div
             className="w-full max-w-md"
             initial={{ opacity: 0, scale: 0.95 }}
