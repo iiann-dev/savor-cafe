@@ -50,7 +50,7 @@ export default function App() {
   const springTransition = { type: 'spring', stiffness: 100, damping: 20 };
 
   return (
-    <div className="min-h-screen bg-background text-on-surface flex flex-col font-body-md">
+    <div className="min-h-screen bg-background text-on-surface flex flex-col font-body-md overflow-x-hidden">
       {/* Fixed Header / Navbar */}
       <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border-subtle">
         <div className="max-w-container-max mx-auto flex justify-between items-center px-gutter py-6">
