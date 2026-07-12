@@ -6,7 +6,7 @@ export default function AboutView() {
   return (
     <div className="relative space-y-16">
       <motion.div
-        className="container-frame rounded-2xl p-6 md:p-16 relative z-10"
+        className="container-frame rounded-2xl p-6 md:p-16 relative z-10 pt-12 md:pt-20"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
