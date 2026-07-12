@@ -165,7 +165,7 @@ export default function App() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 pt-32 pb-section-padding px-margin-mobile md:px-gutter">
+      <main className="flex-1 pt-20 pb-section-padding px-margin-mobile md:px-gutter">
         <div className="max-w-container-max mx-auto">
           <AnimatePresence mode="wait">
             <motion.div
