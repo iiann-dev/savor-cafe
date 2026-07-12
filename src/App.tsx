@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import Lenis from 'lenis';
 import { TabType } from './types';
 import HomeView from './components/HomeView';
 import MenuView from './components/MenuView';
@@ -12,6 +13,25 @@ import { Menu, X, Calendar } from 'lucide-react';
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const lenisRef = useRef<Lenis | null>(null);
+
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.1,
+      easing: (t: number) => Math.min(1, 1 - Math.pow(1 - t, 3)),
+      orientation: 'vertical',
+      smoothWheel: true,
+    });
+    lenisRef.current = lenis;
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
 
   const navItems: { label: string; tab: TabType }[] = [
     { label: 'Home', tab: 'home' },
@@ -44,7 +64,11 @@ export default function App() {
   const handleNavClick = (tab: TabType) => {
     setActiveTab(tab);
     setIsMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const springTransition = { type: 'spring', stiffness: 100, damping: 20 };
