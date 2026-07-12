@@ -17,7 +17,7 @@ export default function App() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.1,
+      duration: 0.8,
       easing: (t: number) => Math.min(1, 1 - Math.pow(1 - t, 3)),
       orientation: 'vertical',
       smoothWheel: true,
