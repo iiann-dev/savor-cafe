@@ -10,7 +10,7 @@ export default function MenuView() {
     <div className="relative space-y-16">
       {/* Header */}
       <motion.div
-        className="text-center space-y-4"
+        className="text-center space-y-4 pt-12 md:pt-20"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
