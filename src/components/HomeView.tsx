@@ -43,12 +43,12 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
                 VIEW MENU
               </motion.button>
               <motion.button
-                onClick={() => onNavigate('reservations')}
+                onClick={() => onNavigate('order')}
                 className="border border-primary-container text-primary-container px-8 py-4 rounded-lg font-label-caps hover:bg-primary-container/10 transition-colors cursor-pointer"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
-                MAKE A RESERVATION
+                ORDER ONLINE
               </motion.button>
             </div>
           </motion.div>
