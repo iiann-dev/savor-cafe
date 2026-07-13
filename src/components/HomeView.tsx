@@ -10,7 +10,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
   return (
     <div className="space-y-24">
       {/* SECTION 1: HERO */}
-      <section className="flex flex-col md:flex-row min-h-[calc(100dvh-5rem)] items-center relative overflow-x-hidden">
+      <section className="flex flex-col md:flex-row min-h-0 md:min-h-[calc(100dvh-5rem)] items-center relative overflow-x-hidden">
         {/* Left: Text 50% */}
         <div className="w-full md:w-1/2 px-8 md:px-16 py-12 md:py-16 z-10">
           <motion.div
