@@ -119,7 +119,7 @@ export default function ReservationsView() {
             <div className="relative rounded-xl overflow-hidden aspect-[16/6] border border-border-subtle group">
               <img
                 src={IMAGES.steakPlatter}
-                alt="Seared Steak Entrée"
+                alt="Vegan Wood-Fired Platter"
                 className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/30 to-transparent flex items-center p-6">
