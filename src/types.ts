@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-export type TabType = 'home' | 'menu' | 'about' | 'reservations' | 'order' | 'contact';
+export type TabType = 'home' | 'menu' | 'about' | 'buzz' | 'reservations' | 'order' | 'contact';
 
 export interface MenuItem {
   id: string;

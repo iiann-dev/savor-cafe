@@ -9,6 +9,7 @@ import ReservationsView from './components/ReservationsView';
 import OrderOnlineView from './components/OrderOnlineView';
 import ContactView from './components/ContactView';
 import { Menu, X, Calendar } from 'lucide-react';
+import BuzzView from './components/BuzzView';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>('home');
@@ -37,6 +38,7 @@ export default function App() {
     { label: 'Home', tab: 'home' },
     { label: 'Menu', tab: 'menu' },
     { label: 'About', tab: 'about' },
+    { label: 'Buzz', tab: 'buzz' },
     { label: 'Reservations', tab: 'reservations' },
     { label: 'Order Online', tab: 'order' },
     { label: 'Contact', tab: 'contact' },
@@ -50,6 +52,8 @@ export default function App() {
         return <MenuView />;
       case 'about':
         return <AboutView />;
+      case 'buzz':
+        return <BuzzView />;
       case 'reservations':
         return <ReservationsView />;
       case 'order':
