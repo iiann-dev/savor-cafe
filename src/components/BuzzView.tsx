@@ -110,8 +110,7 @@ export default function BuzzView() {
               Watch what KRON 4 said about us
             </h3>
             <p className="text-muted-stone max-w-xl font-body-md mb-6">
-              See what KRON 4 had to say about Savor — from Chef Mohamed's journey to the flavors
-              that are putting Inner Sunset on the map.
+              See what KRON 4 had to say about Savor.
             </p>
           </div>
           <div className="relative w-full">
