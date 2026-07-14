@@ -6,7 +6,6 @@ const iconMap = {
   '✨': Newspaper,
   '🍽️': UtensilsCrossed,
   '⭐': Star,
-  '📺': Newspaper,
 };
 
 export default function BuzzView() {
@@ -91,35 +90,41 @@ export default function BuzzView() {
           })}
         </div>
 
-        {/* KRON 4 video placeholder */}
+        {/* KRON 4 video — self-hosted */}
         <motion.div
-          className="bg-surface-onyx rounded-2xl border border-border-subtle p-8 md:p-12 text-center relative overflow-hidden"
+          className="bg-surface-onyx rounded-2xl border border-border-subtle overflow-hidden relative"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
-          <div className="relative z-10 space-y-4">
-            <h3 className="font-display-lg text-headline-md text-text-warm-white">
-              Watch the KRON 4 Feature
+          <div className="p-8 md:p-12 pb-0 md:pb-0">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
+                <span className="text-xl">📺</span>
+              </div>
+              <span className="font-label-caps text-xs text-muted-stone uppercase tracking-widest">
+                Video Feature
+              </span>
+            </div>
+            <h3 className="font-display-lg text-headline-md text-text-warm-white mb-3">
+              Watch what KRON 4 said about us
             </h3>
-            <p className="text-muted-stone max-w-lg mx-auto font-body-md">
+            <p className="text-muted-stone max-w-xl font-body-md mb-6">
               See what KRON 4 had to say about Savor — from Chef Mohamed's journey to the flavors
               that are putting Inner Sunset on the map.
             </p>
-            <div className="flex justify-center pt-4">
-              <motion.a
-                href="https://savor.menu/wp-content/uploads/videos/savor_press_kron.mov"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-primary-container text-primary-container px-8 py-4 rounded-lg font-label-caps hover:bg-primary-container/10 transition-colors cursor-pointer inline-flex items-center gap-3"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-              >
-                <span className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[10px] border-l-primary inline-block"></span>
-                Watch Feature
-              </motion.a>
-            </div>
+          </div>
+          <div className="relative w-full">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full max-h-[600px] object-contain bg-black/40"
+              style={{ display: 'block' }}
+            >
+              <source src="/videos/savor_press_kron.mov" type="video/quicktime" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </motion.div>
       </motion.div>
