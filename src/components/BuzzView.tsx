@@ -122,7 +122,7 @@ export default function BuzzView() {
               className="w-full max-h-[600px] object-contain bg-black/40"
               style={{ display: 'block' }}
             >
-              <source src="/videos/savor_press_kron.mov" type="video/quicktime" />
+              <source src="/videos/savor_press_kron.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
