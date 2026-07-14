@@ -108,14 +108,17 @@ export default function BuzzView() {
               that are putting Inner Sunset on the map.
             </p>
             <div className="flex justify-center pt-4">
-              <motion.button
+              <motion.a
+                href="https://savor.menu/wp-content/uploads/videos/savor_press_kron.mov"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border border-primary-container text-primary-container px-8 py-4 rounded-lg font-label-caps hover:bg-primary-container/10 transition-colors cursor-pointer inline-flex items-center gap-3"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >
                 <span className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[10px] border-l-primary inline-block"></span>
                 Watch Feature
-              </motion.button>
+              </motion.a>
             </div>
           </div>
         </motion.div>

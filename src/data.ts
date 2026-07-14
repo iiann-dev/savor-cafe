@@ -252,7 +252,7 @@ export const BUZZ_MENTIONS: BuzzMention[] = [
     publication: 'KRON 4 News',
     summary:
       'Watch the feature segment that captured what makes Savor a neighborhood treasure — from Chef Mohamed\'s story to the dishes that keep guests coming back.',
-    url: '#',
+    url: 'https://savor.menu/wp-content/uploads/videos/savor_press_kron.mov',
     icon: '📺',
   },
 ];
