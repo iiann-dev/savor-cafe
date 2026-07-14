@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ExternalLink, Star, Newspaper, UtensilsCrossed } from 'lucide-react';
+import { ExternalLink, Star, Newspaper, UtensilsCrossed, Monitor } from 'lucide-react';
 import { BUZZ_MENTIONS } from '../data';
 
 const iconMap = {
@@ -100,7 +100,7 @@ export default function BuzzView() {
           <div className="p-8 md:p-12 pb-0 md:pb-0">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20">
-                <span className="text-xl">📺</span>
+                <Monitor className="w-5 h-5 text-primary" />
               </div>
               <span className="font-label-caps text-xs text-muted-stone uppercase tracking-widest">
                 Video Feature
@@ -122,7 +122,7 @@ export default function BuzzView() {
               className="w-full max-h-[600px] object-contain bg-black/40"
               style={{ display: 'block' }}
             >
-              <source src="/videos/savor_press_kron.mp4" type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL || ''}videos/savor_press_kron.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
