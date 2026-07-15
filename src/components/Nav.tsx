@@ -31,22 +31,14 @@ export default function Nav() {
         {/* Brand */}
         <motion.div
           onClick={() => handleNavClick('/')}
-          className="relative cursor-pointer"
+          className="cursor-pointer"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          {/* Subtle ambient spotlight — warm illumination behind logo */}
-          <div
-            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] pointer-events-none select-none"
-            style={{
-              background:
-                'radial-gradient(circle at center, rgba(212, 175, 55, 0.06) 0%, rgba(212, 175, 55, 0.02) 40%, transparent 70%)',
-            }}
-          />
           <img
             src="/images/savor-logo.png"
             alt="Savor Cafe"
-            className="h-8 md:h-9 w-auto object-contain relative z-[1]"
+            className="h-8 md:h-9 w-auto object-contain"
           />
         </motion.div>
 
