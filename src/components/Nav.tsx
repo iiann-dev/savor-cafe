@@ -39,6 +39,7 @@ export default function Nav() {
             src="/images/savor-logo.png"
             alt="Savor Cafe"
             className="h-8 md:h-9 w-auto object-contain"
+            style={{ filter: 'invert(1)' }}
           />
         </motion.div>
 
