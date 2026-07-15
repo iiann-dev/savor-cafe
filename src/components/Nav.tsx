@@ -35,19 +35,24 @@ export default function Nav() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          {/* Abstract organic border — warm gold cloud shape behind logo */}
+          {/* Abstract organic splash — warm gold blob behind logo */}
           <svg
-            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[180%] h-[180%] pointer-events-none select-none"
-            viewBox="0 0 200 80"
+            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] pointer-events-none select-none"
+            viewBox="0 0 240 100"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            style={{ filter: 'drop-shadow(0 4px 8px rgba(212, 175, 55, 0.15))' }}
           >
+            <defs>
+              <radialGradient id="blobGrad" cx="50%" cy="45%" r="55%">
+                <stop offset="0%" stopColor="#e6c487" stopOpacity="0.25" />
+                <stop offset="45%" stopColor="#c9a96e" stopOpacity="0.18" />
+                <stop offset="85%" stopColor="#c9a96e" stopOpacity="0.08" />
+                <stop offset="100%" stopColor="#c9a96e" stopOpacity="0" />
+              </radialGradient>
+            </defs>
             <path
-              d="M30 10 C45 2, 70 4, 85 8 C100 12, 115 4, 130 8 C145 12, 160 6, 170 14 C180 22, 178 38, 175 48 C172 58, 180 68, 170 74 C160 80, 145 76, 130 72 C115 68, 100 76, 85 72 C70 68, 55 74, 45 70 C35 66, 22 72, 18 62 C14 52, 15 42, 14 32 C13 22, 20 18, 30 10Z"
-              fill="rgba(212, 175, 55, 0.12)"
-              stroke="rgba(212, 175, 55, 0.20)"
-              strokeWidth="1.5"
+              d="M90 8 C105 2, 125 4, 142 6 C160 8, 178 2, 192 10 C206 18, 218 14, 226 26 C234 38, 230 52, 228 62 C226 72, 236 82, 228 90 C220 98, 200 92, 182 94 C164 96, 148 88, 130 90 C112 92, 88 98, 72 94 C56 90, 38 96, 26 88 C14 80, 18 66, 16 52 C14 38, 8 24, 14 16 C20 8, 38 14, 56 12 C74 10, 78 14, 90 8Z"
+              fill="url(#blobGrad)"
             />
           </svg>
           <img
