@@ -37,22 +37,17 @@ export default function Nav() {
         >
           {/* Abstract organic splash — warm gold blob behind logo */}
           <svg
-            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] pointer-events-none select-none"
-            viewBox="0 0 240 100"
+            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[220%] h-[220%] pointer-events-none select-none"
+            viewBox="0 0 260 120"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs>
-              <radialGradient id="blobGrad" cx="50%" cy="45%" r="55%">
-                <stop offset="0%" stopColor="#e6c487" stopOpacity="0.25" />
-                <stop offset="45%" stopColor="#c9a96e" stopOpacity="0.18" />
-                <stop offset="85%" stopColor="#c9a96e" stopOpacity="0.08" />
-                <stop offset="100%" stopColor="#c9a96e" stopOpacity="0" />
-              </radialGradient>
-            </defs>
             <path
-              d="M90 8 C105 2, 125 4, 142 6 C160 8, 178 2, 192 10 C206 18, 218 14, 226 26 C234 38, 230 52, 228 62 C226 72, 236 82, 228 90 C220 98, 200 92, 182 94 C164 96, 148 88, 130 90 C112 92, 88 98, 72 94 C56 90, 38 96, 26 88 C14 80, 18 66, 16 52 C14 38, 8 24, 14 16 C20 8, 38 14, 56 12 C74 10, 78 14, 90 8Z"
-              fill="url(#blobGrad)"
+              d="M95 10 C112 2, 136 4, 155 6 C174 8, 194 2, 210 12 C226 22, 238 16, 248 30 C258 44, 252 58, 250 70 C248 82, 258 94, 248 104 C238 114, 216 106, 196 108 C176 110, 156 100, 136 102 C116 104, 92 112, 74 108 C56 104, 34 110, 22 100 C10 90, 16 74, 14 58 C12 42, 6 26, 14 16 C22 6, 42 14, 62 12 C82 10, 80 18, 95 10Z"
+              fill="rgba(201, 169, 110, 0.10)"
+              stroke="#c9a96e"
+              strokeWidth="1.5"
+              strokeLinejoin="round"
             />
           </svg>
           <img
