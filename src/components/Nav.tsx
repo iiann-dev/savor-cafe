@@ -35,9 +35,11 @@ export default function Nav() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          <span className="font-display-lg text-[24px] uppercase tracking-widest text-primary-container">
-            Savor Cafe
-          </span>
+          <img
+            src="/images/savor-logo.png"
+            alt="Savor Cafe"
+            className="h-8 md:h-9 w-auto object-contain"
+          />
         </motion.div>
 
         {/* Desktop Nav */}
