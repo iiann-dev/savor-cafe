@@ -28,33 +28,18 @@ export default function Nav() {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border-subtle">
       <div className="max-w-container-max mx-auto flex justify-between items-center px-gutter py-6">
-        {/* Brand */}
+        {/* Brand — PNG with gold glow */}
         <motion.div
           onClick={() => handleNavClick('/')}
           className="relative cursor-pointer"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          {/* Abstract organic splash — warm gold blob behind logo */}
-          <svg
-            className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[220%] h-[220%] pointer-events-none select-none"
-            viewBox="0 0 260 120"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M95 10 C112 2, 136 4, 155 6 C174 8, 194 2, 210 12 C226 22, 238 16, 248 30 C258 44, 252 58, 250 70 C248 82, 258 94, 248 104 C238 114, 216 106, 196 108 C176 110, 156 100, 136 102 C116 104, 92 112, 74 108 C56 104, 34 110, 22 100 C10 90, 16 74, 14 58 C12 42, 6 26, 14 16 C22 6, 42 14, 62 12 C82 10, 80 18, 95 10Z"
-              fill="#c9a96e"
-              stroke="#c9a96e"
-              strokeWidth="1.5"
-              strokeLinejoin="round"
-              opacity="0.85"
-            />
-          </svg>
           <img
             src="/images/savor-logo.png"
             alt="Savor Cafe"
-            className="h-8 md:h-9 w-auto object-contain relative z-[1]"
+            className="h-8 md:h-9 w-auto object-contain brightness-[2] contrast-[1.2]"
+            style={{ filter: 'drop-shadow(0 0 6px #c9a96e) drop-shadow(0 0 18px rgba(201,169,110,0.5))' }}
           />
         </motion.div>
 
