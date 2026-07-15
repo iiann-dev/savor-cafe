@@ -38,8 +38,8 @@ export default function Nav() {
           <img
             src="/images/savor-logo.png"
             alt="Savor Cafe"
-            className="h-8 md:h-9 w-auto object-contain brightness-[2] contrast-[1.2]"
-            style={{ filter: 'drop-shadow(0 0 6px #c9a96e) drop-shadow(0 0 18px rgba(201,169,110,0.5))' }}
+            className="h-16 md:h-[72px] w-auto object-contain brightness-[1.5]"
+            style={{ filter: 'drop-shadow(0 0 10px #c9a96e) drop-shadow(0 0 30px rgba(201,169,110,0.6)) drop-shadow(0 0 60px rgba(201,169,110,0.3))' }}
           />
         </motion.div>
 
