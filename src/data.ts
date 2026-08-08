@@ -258,7 +258,7 @@ export const IMAGES = {
   // Chef in kitchen
   chefMohamed: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=75&w=640&auto=format&fit=crop',
   // Flat lay of colorful veggie dishes
-  foodPlatter: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=75&w=1000&auto=format&fit=crop',
+  foodPlatter: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=75&w=800&auto=format&fit=crop',
   // Bread/hummus close up
   hummusPlatter: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?q=75&w=640&auto=format&fit=crop',
   // Vibrant vegan platter — wood-fired veggies, vegan theme
