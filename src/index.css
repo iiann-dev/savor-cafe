@@ -91,7 +91,7 @@ body {
   background-color: #1c1917;
   background-image:
     linear-gradient(rgba(28, 25, 23, 0.95), rgba(28, 25, 23, 0.95)),
-    url('https://www.transparenttextures.com/patterns/dark-brick-wall.png');
+    url('/images/brick-wall.png');
   color: #e9e1dd;
   font-family: "Geist", sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -41,6 +41,8 @@ export default function AboutPage() {
                 <img
                   src={IMAGES.chefMohamed}
                   alt="Chef Mohamed Aboghanem"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover scale-105 hover:scale-110 transition-transform duration-700"
                 />
               </motion.div>

@@ -252,15 +252,15 @@ export const BUZZ_MENTIONS: BuzzMention[] = [
 
 export const IMAGES = {
   // Hero image — vibrant vegan/mediterranean dish
-  heroFood: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop',
+  heroFood: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=75&w=1000&auto=format&fit=crop',
   // Interior of a cozy cafe
-  bistroInterior: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop',
+  bistroInterior: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=75&w=900&auto=format&fit=crop',
   // Chef in kitchen
-  chefMohamed: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop',
+  chefMohamed: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=75&w=640&auto=format&fit=crop',
   // Flat lay of colorful veggie dishes
-  foodPlatter: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800&auto=format&fit=crop',
+  foodPlatter: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=75&w=1000&auto=format&fit=crop',
   // Bread/hummus close up
-  hummusPlatter: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?q=80&w=800&auto=format&fit=crop',
+  hummusPlatter: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?q=75&w=640&auto=format&fit=crop',
   // Vibrant vegan platter — wood-fired veggies, vegan theme
-  steakPlatter: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop',
+  steakPlatter: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=75&w=1100&auto=format&fit=crop',
 };

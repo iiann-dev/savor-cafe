@@ -62,10 +62,13 @@ export default function HomePage() {
           >
             <div className="aspect-[4/3] rounded-[16px] overflow-hidden border border-border-subtle shadow-2xl">
               <img
-                src={IMAGES.heroFood}
-                alt="Fresh vegetarian cuisine"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
+                              src={IMAGES.heroFood}
+                              alt="Fresh vegetarian cuisine"
+                              loading="eager"
+                              fetchPriority="high"
+                              decoding="async"
+                              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            />
             </div>
           </motion.div>
         </div>
@@ -115,10 +118,12 @@ export default function HomePage() {
             >
               <div className="aspect-video w-full">
                 <img
-                  src={IMAGES.foodPlatter}
-                  alt="Fresh vegetarian platter"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                />
+                                  src={IMAGES.foodPlatter}
+                                  alt="Fresh vegetarian platter"
+                                  loading="lazy"
+                                  decoding="async"
+                                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-surface/90 via-surface/40 to-transparent flex flex-col justify-end p-6">
                 <span className="font-label-caps text-primary uppercase tracking-widest">
@@ -145,10 +150,12 @@ export default function HomePage() {
         >
           <div className="aspect-[3/4] rounded-2xl overflow-hidden border border-border-subtle shadow-xl">
             <img
-              src={IMAGES.chefMohamed}
-              alt="Chef Mohamed Aboghanem"
-              className="w-full h-full object-cover"
-            />
+                          src={IMAGES.chefMohamed}
+                          alt="Chef Mohamed Aboghanem"
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-cover"
+                        />
           </div>
           <div className="absolute -bottom-6 -right-6 bg-primary text-on-primary p-4 rounded-full w-24 h-24 flex flex-col items-center justify-center font-display-lg text-center text-[10px] leading-tight shadow-xl">
             <span>EST.</span>

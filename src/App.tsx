@@ -1,16 +1,17 @@
-import { useEffect, useRef } from 'react';
+import { Suspense, lazy, useEffect, useRef } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, Outlet } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Lenis from 'lenis';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import MenuPage from './pages/MenuPage';
-import AboutPage from './pages/AboutPage';
-import BuzzPage from './pages/BuzzPage';
-import ReservationsPage from './pages/ReservationsPage';
-import OrderPage from './pages/OrderPage';
-import ContactPage from './pages/ContactPage';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const MenuPage = lazy(() => import('./pages/MenuPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const BuzzPage = lazy(() => import('./pages/BuzzPage'));
+const ReservationsPage = lazy(() => import('./pages/ReservationsPage'));
+const OrderPage = lazy(() => import('./pages/OrderPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 function Layout() {
   const location = useLocation();
@@ -49,13 +50,15 @@ function Layout() {
       <main className="flex-1 pt-20 pb-section-padding px-margin-mobile md:px-gutter">
         <div className="max-w-container-max mx-auto">
             <motion.div
-              key={location.pathname}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.2, ease: 'easeInOut' }}
-            >
-              <Outlet />
-            </motion.div>
+                          key={location.pathname}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ duration: 0.2, ease: 'easeInOut' }}
+                        >
+                          <Suspense fallback={null}>
+                            <Outlet />
+                          </Suspense>
+                        </motion.div>
         </div>
       </main>
       <Footer />

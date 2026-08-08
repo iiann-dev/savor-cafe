@@ -120,6 +120,8 @@ export default function ReservationsPage() {
               <img
                 src={IMAGES.steakPlatter}
                 alt="Vegan Wood-Fired Platter"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/30 to-transparent flex items-center p-6">
