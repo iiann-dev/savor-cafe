@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="saffronGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C9A96E"/>
+      <stop offset="50%" stop-color="#D4B87E"/>
+      <stop offset="100%" stop-color="#E8D4A8"/>
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5E6C8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#C9A96E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D3D3D"/>
+      <stop offset="100%" stop-color="#002B2B"/>
+    </linearGradient>
+  </defs>
+  <!-- Deep teal rounded background -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="url(#tealGrad)"/>
+  <!-- Arabic-inspired S curve (calligraphic stroke) -->
+  <g transform="translate(16, 16)">
+    <!-- Main S stroke -->
+    <path d="M-8 -6 Q-8 0 -4 4 Q0 8 4 8 Q8 8 8 4 Q8 0 4 -4 Q0 -8 -4 -8 Q-8 -8 -8 -4" 
+          fill="none" stroke="url(#saffronGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Saffron dot accent (like a spice) -->
+    <circle cx="8" cy="-8" r="2.5" fill="url(#saffronGrad)"/>
+    <circle cx="8" cy="-8" r="1.5" fill="#FFF8E7" opacity="0.8"/>
+    <!-- Subtle glow behind the curve -->
+    <path d="M-8 -6 Q-8 0 -4 4 Q0 8 4 8 Q8 8 8 4 Q8 0 4 -4 Q0 -8 -4 -8 Q-8 -8 -8 -4" 
+          fill="none" stroke="url(#glowGrad)" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+    <!-- Knafeh phyllo hint - tiny lines -->
+    <g stroke="#C9A96E" stroke-width="0.5" opacity="0.4">
+      <line x1="-6" y1="-2" x2="-2" y2="-2"/>
+      <line x1="-6" y1="2" x2="-2" y2="2"/>
+      <line x1="2" y1="-2" x2="6" y2="-2"/>
+      <line x1="2" y1="2" x2="6" y2="2"/>
+    </g>
+  </g>
+</svg>
