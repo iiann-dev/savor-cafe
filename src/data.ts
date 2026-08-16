@@ -230,21 +230,21 @@ export const BUZZ_MENTIONS: BuzzMention[] = [
   {
     publication: 'San Francisco Magazine',
     summary:
-      'Savor was named Best Vegetarian Restaurant by San Francisco\'s premier luxury lifestyle publication — a testament to Chef Mohamed\'s vibrant modern Arabic cuisine.',
+      'Recognized for thoughtful plant-forward cooking and modern Mediterranean small plates in the Inner Sunset.',
     url: 'https://www.modernluxury.com/san-francisco/',
     icon: '✨',
   },
   {
     publication: 'SF Eater',
     summary:
-      'Eater SF chronicles Chef Mohamed Aboghanem\'s inspiring return — from Berkeley\'s beloved Saha to his new Inner Sunset gem, bringing Yemeni-Arabic soul food to San Francisco.',
+      'Featured for neighborhood-driven Middle Eastern comfort food, fragrant spice blends, and welcoming hospitality.',
     url: 'https://sf.eater.com/2022/5/31/23148718/savor-new-restaurant-inner-sunset-open-menu',
     icon: '🍽️',
   },
   {
     publication: 'Yelp',
     summary:
-      'Rated 4.7 stars across 312 reviews. Guests rave about the Wild Mushroom Knafeh, Portobello Shawarma, and the warm, inviting atmosphere that makes every visit feel special.',
+      'Consistently high ratings from neighborhood regulars praising the freshly baked flatbreads, dips, and warm dinner service.',
     url: 'https://www.yelp.com/biz/savor-san-francisco-7',
     icon: '⭐',
   },

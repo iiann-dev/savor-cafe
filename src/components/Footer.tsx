@@ -46,8 +46,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-border-subtle/50 mt-8 pt-8 text-center text-muted-stone text-xs font-label-caps uppercase tracking-widest">
-          &copy; {new Date().getFullYear()} Savor Cafe. All rights reserved.
+        <div className="border-t border-border-subtle/50 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-muted-stone text-xs font-label-caps">
+          <p className="uppercase tracking-widest">&copy; {new Date().getFullYear()} Savor Cafe. All rights reserved.</p>
+          <p className="normal-case tracking-normal text-muted-stone/80 text-center md:text-right">
+            Concept redesign created for portfolio purposes. Not affiliated with or endorsed by Savor Cafe SF.
+          </p>
         </div>
       </div>
     </footer>
