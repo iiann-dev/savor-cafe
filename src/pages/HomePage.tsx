@@ -25,8 +25,8 @@ export default function HomePage() {
             <p className="font-body-lg text-white/80 mb-3 leading-relaxed">
               Healthy vegetarian, modern Arabic food, as well as beer and wine.
             </p>
-            <p className="font-body-md text-white/70 mb-1 leading-relaxed">
-              Nestled in Inner Sunset, San Francisco — where every dish is made with love.
+            <p className="font-serif italic text-muted-stone text-body-lg mb-6">
+              Located in the Inner Sunset, San Francisco, serving fresh vegetarian dishes and authentic Mediterranean plates daily.
             </p>
             <p className="font-body-md text-primary/80 mb-10 leading-relaxed italic">
               Stop by, eat some delicious food and relax.

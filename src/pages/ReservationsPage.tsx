@@ -93,7 +93,7 @@ export default function ReservationsPage() {
                   Book Your Experience
                 </h3>
                 <p className="text-muted-stone font-body-md max-w-md mx-auto leading-relaxed">
-                  Secure your table instantly through OpenTable — no account required. Choose your date, time, and party size in seconds.
+                  Reserve your table online through OpenTable. Pick your preferred date, time, and party size in seconds.
                 </p>
               </div>
 

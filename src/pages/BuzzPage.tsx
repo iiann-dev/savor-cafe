@@ -34,9 +34,8 @@ export default function BuzzPage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <p className="font-body-lg text-text-warm-white/80 leading-relaxed">
-              The word is getting out about Savor — and we're humbled by every kind word,
-              every review, and every return guest who walks through our doors.
+            <p className="text-muted-stone text-body-lg max-w-xl mx-auto">
+              Reviews and features from local publications and neighborhood diners across San Francisco.
             </p>
           </motion.div>
         </div>
