@@ -120,6 +120,7 @@ export default function BuzzPage() {
               className="w-full max-h-[600px] object-contain bg-black/40"
               style={{ display: 'block' }}
             >
+              <source src={`${import.meta.env.BASE_URL || ''}videos/savor_press_kron.webm`} type="video/webm" />
               <source src={`${import.meta.env.BASE_URL || ''}videos/savor_press_kron.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
